@@ -3,7 +3,7 @@ const mongoose= require('mongoose')
 const password = process.env.ATLAS_PASS
 const dbname= 'porukeapi'
 const url=`mongodb+srv://ivanaradalj-okviri:${password}@cluster0.vqn5c.mongodb.net/${dbname}?retryWrites=true&w=majority`
-
+require('dotenv').config()
 console.log("spajam se na bazu")
 //connect je isto promise,callbek pa ide .then i .catch
 mongoose.connect(url, {

@@ -3,6 +3,7 @@ const app = express()
 const cors = require('cors')
 app.use(cors())
 app.use(express.json())
+require('dotenv').config()
 //midlever za slanje staticke stranice na server
 //build mapa mi sadrzi taj staticki sadrzaj
 app.use(express.static('build'))
