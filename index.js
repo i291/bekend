@@ -98,7 +98,7 @@ app.get('/api/poruke/:id',(req,res,next) => {
 
 
 })
-app.delete('/api/poruke/:id',(req,res) => {
+app.delete('/api/poruke/:id',(req,res,) => {
     const id=req.params.id
     Poruka.findByIdAndRemove(id)
     .then(result =>{
@@ -190,7 +190,7 @@ app.use(errorHandler)
 
 
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3003
 app.listen(PORT, () => {
     console.log("server slusa port 3003")
 })
