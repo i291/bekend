@@ -8,6 +8,7 @@
     "start": "node index.js",
     "dev": "nodemon -r dotenv/config index.js"
   },
+  "proxy": "http://localhost:3000",
   "author": "Ivana",
   "license": "ISC",
   "dependencies": {
